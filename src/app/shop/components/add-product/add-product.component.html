@@ -1,0 +1,33 @@
+
+
+<a
+class='btn btn-primary'
+(click)='onAdd()'
+>Ajouter</a>
+
+<a
+class='btn btn-warning'
+(click)='OnDelete()'
+> Supprimer</a>
+
+<p *ngIf="panier===1">vous avez {{panier}} élément dans votre panier </p>
+<p *ngIf="panier>1 && panier<=3">vous avez {{panier}} éléments dans votre panier </p>
+<p *ngIf="panier>3" [ngClass]="{'color': panier>3}"> vous avez {{panier}} éléments dans votre panier </p>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <a class="btn btn-warning" (click)='onDelete()' >Supprimer</a> -->
+
+
+
+
+
+
